@@ -9,6 +9,7 @@ client = OpenAI(
     base_url="https://api.groq.com/openai/v1"
 )
 
+
 model = os.getenv("GROQ_MODEL", "llama3-8b-8192")
 
 def ask_llm(prompt: str) -> str:
