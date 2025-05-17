@@ -7,6 +7,8 @@ load_dotenv()
 
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
+
+
 model = genai.GenerativeModel("models/gemini-1.5-pro")
 
 def ask_llm(prompt: str) -> str:
