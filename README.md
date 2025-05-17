@@ -64,8 +64,8 @@ streamlit run app.py
 ✅ View filtered candidates and reasons for the match.
 
 ### 📦 Requirements
-Python 3.8+
-Streamlit
-PyPDF2
-python-dotenv
-Groq SDK (via OpenAI-compatible library)
+- Python 3.8+
+- Streamlit
+- PyPDF2
+- python-dotenv
+- Groq SDK (via OpenAI-compatible library)
