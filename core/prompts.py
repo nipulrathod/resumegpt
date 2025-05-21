@@ -1,12 +1,19 @@
 def extraction_prompt(resume_text):
     return f""" 
-Extract the following information from this resume:
+You are an information extractor.
+
+Extract the following information from this resume in **valid JSON only**:
 - Name
 - Email
+- Education: A list of objects containing:
+    - Degree
+    - Institution
+    - Year (if available)
 - Skills
 - Experience Summary
 - Technologies
-Return the result in a JSON format.
+
+⚠️ Do not include any commentary, explanation, or notes — return only the JSON.
 
 Resume:
 {resume_text}
@@ -20,5 +27,6 @@ Given the following structured resume data:
 
 Answer this query: "{user_query}"
 
-Return only the matching candidate names and why they matched.
+Return only the matching candidate names and a short reason why they matched (like skills or experience match).
+Avoid showing raw JSON or unrelated fields.
 """
