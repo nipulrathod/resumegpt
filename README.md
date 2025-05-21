@@ -66,6 +66,6 @@ streamlit run app.py
 ### 📦 Requirements
 - Python 3.8+
 - Streamlit
-- PyPDF2
+- pdfplumber
 - python-dotenv
 - Groq SDK (via OpenAI-compatible library)
