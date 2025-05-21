@@ -3,3 +3,4 @@ openai
 PyPDF2
 pandas
 python-dotenv
+pdfplumber

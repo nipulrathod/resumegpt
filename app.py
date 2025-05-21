@@ -15,11 +15,14 @@ if st.button("Run Query"):
     if uploaded_files and query:
         resume_texts = parse_pdfs(uploaded_files)
         structured_data = extract_info(resume_texts)
+        # st.json(structured_data)
         results = filter_resumes(query, structured_data)
         st.success("Query executed!")
-        
-        for result in results:
-            st.write(result)
-            
+
+        if results:
+            for result in results:
+                st.write(f"{result}")
+        else:
+            st.warning("No matching candidates found.")
     else:
         st.warning("Please upload resumes and enter a query.")
