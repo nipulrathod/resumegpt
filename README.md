@@ -64,7 +64,7 @@ streamlit run app.py
 ✅ View filtered candidates and reasons for the match.
 
 ### 📦 Requirements
-- Python 3.8+
+- Python 3.10+
 - Streamlit
 - pdfplumber
 - python-dotenv
